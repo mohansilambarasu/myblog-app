@@ -2,7 +2,7 @@
 
 BlogSphere is a lightweight, frontend-only blogging application that allows users to create, edit, delete, like, and comment on blog posts. It is built using React and localStorage, eliminating the need for a backend. The app provides a seamless blogging experience without requiring authentication or database storage.
 
-You can view the live version here: https://myblog-6w696o6ri-mohans-projects-a3dba599.vercel.app/
+You can view the live version here: https://myblog-app-xi.vercel.app/
 
 ## Technologies Used
 - **React.js (Vite)** for building the UI
