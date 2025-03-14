@@ -1,14 +1,37 @@
-# myblog-app
+# BlogSphere - Frontend-only blogging website
 
-# React + Vite
+BlogSphere is a lightweight, frontend-only blogging application that allows users to create, edit, delete, like, and comment on blog posts. It is built using React and localStorage, eliminating the need for a backend. The app provides a seamless blogging experience without requiring authentication or database storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You can view the live version here: https://myblog-6w696o6ri-mohans-projects-a3dba599.vercel.app/
 
-Currently, two official plugins are available:
+## Technologies Used
+- **React.js (Vite)** for building the UI
+- **State Management** React Context API
+- **Vite** as the development server and bundler
+- **TailwindCSS** - styling
+- **React Router** - navigation
+- **Icons** - React Icons
+- **Storage** - Browser Local Storage
+- **Deployment** - Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
+To run this project locally, clone the repository, install dependencies, and start the development server:
+1. Clone the repo:  
+   `git clone https://github.com/mohansilambarasu/myblog-app.git`
+2. Install dependencies:  
+   `cd myblog-app && npm install`
+3. Run the server:  
+   `npm run dev`
 
-## Expanding the ESLint configuration
+## Features
+- Create, Edit, and Delete Blog Posts (Only the owner can edit/delete).
+- Like & Unlike Posts – Each like is tied to a user.
+- Comment on Posts – Users can add & delete their own comments.
+- Instant & Fast – No backend, everything runs in the browser.
+- Persistent Data – Blog posts, likes, and comments are stored in localStorage.
+- SPA (Single Page Application) – Uses React Router for smooth navigation.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future Possibilities?
+- We could add cloud storage, user accounts, and image uploads! But for now, enjoy a fast, simple way to blog – no hassle, just writing!
+  
+- For now, BlogSphere is a fun and easy way to start blogging without any setup , BlogSphere now & start sharing your thoughts instantly! 
