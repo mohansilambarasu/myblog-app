@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Navbar from "./components/Navbar";
 import { PostProvider } from "./context/BlogContext";
+import { useEffect, useState } from "react";
+import Loader from "./components/Loader";
 
 const PrivateRoute = ({ element }) => {
   const loggedInUser = localStorage.getItem("loggedInUser");
@@ -12,6 +14,15 @@ const PrivateRoute = ({ element }) => {
 };
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
   return (
     <PostProvider>
       <BrowserRouter>
